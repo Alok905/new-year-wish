@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hny-container {
+  z-index: 5;
+  font-size: 90px;
+  font-weight: bold;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background: url(assets/hnybg2.jpg);
+  background-position: 0 -200px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word {
+  /* flex: 1; */
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hny-char {
+  margin-right: 25px;
+  margin-top: -600px;
+  animation: animate-text 1s ease-out 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-text {
+  0% {
+    margin-top: -600px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.text-container {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+  padding: 30px;
+  right: 30px;
+  top: 30px;
+  z-index: 5;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  background: #0009;
+  border-radius: 30px;
+  color: #fff;
+  animation: text-container-animate 1s ease-in-out 1;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-container-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-position: 0 -200px;
+}

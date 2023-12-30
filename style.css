@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-color: #711db0;
+  --pink-color: #c21292;
+  --red-color: #ef4040;
+  --yellow-color: #ffa732;
+  --white-color: #ead196;
+}
+
+body {
+  background: var(--pink-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.container {
+  /* position: relative; */
+  border: none;
+  height: 100%;
+  width: 80%;
+  padding: 15px;
+  background: var(--purple-color);
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px var(--yellow-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2%;
+  overflow: hidden;
+}
+
+.container .left,
+.container .right {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .left {
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.input-heart {
+  height: 30px;
+  width: 30px;
+  accent-color: var(--pink-color);
+}
+.input-div span {
+  font-family: "Style Script", cursive;
+  color: var(--white-color);
+  font-size: 20px;
+  font-style: italic;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.input-div span span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#btn-wish {
+  width: 170px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 14px;
+  border: none;
+  background: var(--red-color);
+  color: #fff;
+  font-weight: bold;
+  font-family: "Style Script", cursive;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-style: italic;
+  box-shadow: 0px 0px 7px var(--yellow-color);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#btn-wish:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.container .right .heart-image-1 {
+  width: 50%;
+  align-self: flex-end;
+  animation: heart-bit-1 0.8s linear infinite alternate;
+}
+.container .right .heart-image-2 {
+  width: 35%;
+  align-self: flex-end;
+  margin-top: -8%;
+  margin-right: 22%;
+  animation: heart-bit-2 0.8s linear infinite alternate;
+}
+.container .right .heart-image-3 {
+  width: 20%;
+  align-self: flex-end;
+  margin-top: -6%;
+  margin-right: 42.5%;
+  animation: heart-bit-3 0.8s linear infinite alternate;
+}
+.container .right .heart-image-4 {
+  width: 10%;
+  align-self: flex-end;
+  margin-top: -4%;
+  margin-right: 56%;
+  animation: heart-bit-4 0.8s linear infinite alternate;
+}
+
+@keyframes heart-bit-1 {
+  0% {
+    transform: scale(90%) rotate(20deg);
+  }
+  100% {
+    transform: scale(105%) rotate(20deg);
+
+    filter: drop-shadow(0 0 15px var(--yellow-color));
+  }
+}
+@keyframes heart-bit-2 {
+  0% {
+    transform: scale(90%) rotate(28deg);
+  }
+  100% {
+    transform: scale(105%) rotate(28deg);
+
+    filter: drop-shadow(0 0 15px var(--yellow-color));
+  }
+}
+@keyframes heart-bit-3 {
+  0% {
+    transform: scale(90%) rotate(36deg);
+  }
+  100% {
+    transform: scale(105%) rotate(36deg);
+
+    filter: drop-shadow(0 0 15px var(--yellow-color));
+  }
+}
+@keyframes heart-bit-4 {
+  0% {
+    transform: scale(90%) rotate(40deg);
+  }
+  100% {
+    transform: scale(105%) rotate(40deg);
+    filter: drop-shadow(0 0 15px var(--yellow-color));
+  }
+}
+
+.heart {
+  height: 50px;
+  position: absolute;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+.heart.heart11 {
+  animation-name: heartfly1;
+}
+.heart.heart12 {
+  animation-name: heartfly1;
+}
+.heart.heart13 {
+  animation-name: heartfly1;
+}
+.heart.heart21 {
+  animation-name: heartfly1;
+}
+.heart.heart22 {
+  animation-name: heartfly1;
+}
+@keyframes heartfly1 {
+  0% {
+  }
+  100% {
+    top: -60%;
+  }
+}
