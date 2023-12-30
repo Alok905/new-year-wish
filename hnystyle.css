@@ -75,7 +75,7 @@ body {
   border-radius: 30px;
   color: #fff;
   animation: text-container-animate 1s ease-in-out 1;
-  animation-delay: 6s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 

@@ -92,11 +92,6 @@ input &&
     }
   });
 
-btn &&
-  btn.addEventListener("click", () => {
-    console.log("clicked");
-  });
-
 //------------------------------
 const hnyTexts = document.querySelectorAll(".hny-char");
 hnyTexts.forEach((hny, i) => {
@@ -108,4 +103,4 @@ const textContainer = document.querySelector(".text-container");
 setTimeout(() => {
   hnyContainer.style.display = "none";
   // textContainer.style.display = "flex";
-}, 6000);
+}, 7000);
